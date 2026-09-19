@@ -66,7 +66,7 @@ export function TaskForm({
           maxLength={200}
           value={values.title}
           onChange={(e) => setValues((v) => ({ ...v, title: e.target.value }))}
-          className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-slate-500 focus:outline-none"
+          className="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-slate-500 focus:outline-none"
         />
       </div>
 
@@ -80,7 +80,7 @@ export function TaskForm({
           rows={4}
           value={values.description}
           onChange={(e) => setValues((v) => ({ ...v, description: e.target.value }))}
-          className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-slate-500 focus:outline-none"
+          className="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-slate-500 focus:outline-none"
         />
       </div>
 
@@ -95,7 +95,7 @@ export function TaskForm({
             onChange={(e) =>
               setValues((v) => ({ ...v, status: e.target.value as TaskStatus }))
             }
-            className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-slate-500 focus:outline-none"
+            className="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-slate-500 focus:outline-none"
           >
             <option value="PENDING">Pending</option>
             <option value="IN_PROGRESS">In Progress</option>
@@ -113,7 +113,7 @@ export function TaskForm({
             onChange={(e) =>
               setValues((v) => ({ ...v, priority: e.target.value as TaskPriority }))
             }
-            className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-slate-500 focus:outline-none"
+            className="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-slate-500 focus:outline-none"
           >
             <option value="LOW">Low</option>
             <option value="MEDIUM">Medium</option>
@@ -131,7 +131,7 @@ export function TaskForm({
           type="date"
           value={values.dueDate}
           onChange={(e) => setValues((v) => ({ ...v, dueDate: e.target.value }))}
-          className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-slate-500 focus:outline-none"
+          className="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-slate-500 focus:outline-none"
         />
       </div>
 

@@ -1,26 +1,16 @@
 @import "tailwindcss";
 
+/*
+ * This app ships one light theme, applied via Tailwind utility classes
+ * (bg-slate-50, text-slate-900, etc.) throughout. `color-scheme: light`
+ * stops browsers from auto-dark-styling native form controls (inputs,
+ * selects) when the OS is in dark mode — without it, a dark OS theme can
+ * render input text unreadable against our light backgrounds.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
