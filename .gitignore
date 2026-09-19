@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+.next/
+out/
+build/
+
+# Env files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Prisma
+backend/prisma/*.db
+
+# Logs
+npm-debug.log*
+*.log
+
+# Testing
+coverage/
+
+# IDE / OS
+.vscode/
+.claude/
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
